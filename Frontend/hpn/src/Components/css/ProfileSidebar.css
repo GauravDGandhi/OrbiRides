@@ -1,0 +1,71 @@
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+  
+.sidebar-card {
+    background-color: #222;
+    color: white;
+    width: 250px;
+    padding: 20px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+  
+.content-area {
+    margin-left: 270px;
+    padding: 20px;
+    flex-grow: 1;
+    background: #f4f4f4;
+    border-radius: 10px;
+}
+  
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+  
+.user-info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+  
+.sidebar-card ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.sidebar-card li {
+    margin-bottom: 15px;
+}
+  
+.sidebar-card a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px;
+    border-radius: 6px;
+}
+  
+/* Removed hover effect */
+.bg-dark {
+    border-radius: 0px 10px 10px 0px;
+}
+
+.list-unstyled li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

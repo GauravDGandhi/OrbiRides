@@ -1,0 +1,78 @@
+/* Body font customization */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+/* Form Styling */
+.input-group-text {
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 40px;}
+
+.form-control {
+    font-size: 16px;
+    padding: 10px;
+    color: black; /* Ensure text inside input is visible */
+}
+
+/* Placeholder Styling */
+input::placeholder {
+    color: #444; /* Darker color for visibility */
+    font-size: 16px;
+    opacity: 1; /* Ensure full visibility */
+}
+
+input:focus::placeholder {
+    color: #666;
+}
+
+/* Button Customization */
+.btn-orange {
+    background-color: #FF9800;
+    border: none;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+    background-color: #FFB74D;
+}
+
+/* Input Group Text Styling */
+.bg-orange {
+    background-color: #FF9800;
+}
+
+.text-white {
+    color: rgb(10, 9, 9);
+}
+
+.fs-4 {
+    font-size: 20px;
+}
+
+.shadow-lg {
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.rounded-pill {
+    border-radius: 50px;
+}
+
+/* Responsive Styling for Smaller Screens */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn-orange {
+        font-size: 16px;
+    }
+
+    .input-group {
+        margin-bottom: 10px;
+    }
+}

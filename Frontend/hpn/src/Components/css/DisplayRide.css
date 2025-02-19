@@ -1,0 +1,180 @@
+/* Ensure the container takes full height */
+/* Ensure the container takes full height */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+/* Banner container to hold the background image */
+
+/* Banner container to hold the background image */
+.home-banner-container {
+  position: relative;
+  width: 100%;
+  height: 900px; /* Adjust the height based on design */
+  overflow: hidden;
+}
+
+/* Background image of the banner */
+.home-bannerImage-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* Ride Search container: Positioned at the center over the banner */
+.ride-search-container {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 950px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.ride-details-container {
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 950px;
+
+  /* left: 100%; */
+  
+  margin-top:200px ;
+  margin-left:400px;
+ 
+}
+
+/* Header style for ride details */
+/* Ride Details Header */
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+/* Ride List Container */
+.rides-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Individual Ride Card */
+.ride-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.ride-item:hover {
+  transform: scale(1.03);
+}
+
+/* Ride Header */
+.ride-item h2 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Ride Info Grid */
+.ride-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.ride-info div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1rem;
+}
+
+/* Price Information */
+.price-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Driver Info */
+.driver-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  font-size: 1rem;
+}
+
+.instant-booking {
+  background-color: #2196f3;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+/* Ride Alert Button */
+.ride-alert-btn {
+  background-color: #fe9e0d;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.ride-alert-btn:hover {
+  background-color: #f57c00;
+}
+
+/* Icons */
+.icon {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  .ride-info {
+    grid-template-columns: 1fr;
+  }
+
+  .ride-alert-btn {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+
+  .rides-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}

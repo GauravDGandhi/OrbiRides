@@ -1,0 +1,81 @@
+/* Ensure the container takes full height */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Banner container with flex to align items */
+.home-banner-container {
+  display: flex;
+  justify-content: space-between; /* Space out the text and image sections */
+  align-items: center;
+  width: 100%;
+  height: 400px; /* Adjust height based on your design */
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Background image of the banner */
+.home-bannerImage-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1; /* Keeps image behind text */
+}
+
+/* Text section with proper positioning */
+.home-text-section {
+  max-width: 600px;
+  z-index: 1;
+  color: white;
+}
+
+/* Primary heading style */
+.primary-heading {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Primary text style */
+.primary-text {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Button style */
+.secondary-button {
+  background-color: #ff6a00;
+  color: white;
+
+  border: none;
+  border-radius: 50px;
+  
+  align-items: center;
+  font-size: 1rem;
+  
+  cursor: pointer;
+}
+
+.secondary-button:hover {
+  background-color: #e05b00; /* Darker shade for hover effect */
+}
+
+/* Ride search section styling */
+.home-image-container {
+  display: flex;
+  justify-content: flex-end; /* Align the image to the right */
+  max-width: 450px;
+  margin-left: 20px;
+}
+
+.home-image-container img {
+  width: 100%;
+  height: auto;
+  object-fit: contain; /* Ensures the image stays proportionate */
+  margin-right: 20px; /* Equal margin on the right */
+}
